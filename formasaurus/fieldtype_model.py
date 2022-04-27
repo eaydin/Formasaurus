@@ -224,7 +224,7 @@ def get_model(use_precise_form_types=True):
     c1, c2 = _PRECISE_C1_C2 if use_precise_form_types else _REALISTIC_C1_C2
     return CRF(
         all_possible_transitions=True,
-        max_iterations=100,
+        max_iterations=400,
         c1=c1,
         c2=c2
     )
